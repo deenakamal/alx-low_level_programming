@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: print digit number 
+ * Description: print digit number
  *
  * Return: Alwayes 0 (Success)
 */
