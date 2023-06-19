@@ -26,7 +26,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Lasr digit of %i is %i and is 0\n", n, number);
+		printf("Last digit of %i is %i and is 0\n", n, number);
 	}
 	return (0);
 }
