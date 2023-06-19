@@ -8,9 +8,9 @@
 */
 int main(void)
 {
-	int num;
+	int num = 0;
 
-	for (num = 48; num <= 102; num++)
+	while (num <= 102)
 	{
 		putchar(num);
 
