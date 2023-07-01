@@ -8,9 +8,10 @@
 char *_strcat(char *dest, char *src)
 {
 	int c1, c2;
-	
+
 	for (c1 = 0; dest[c1]; c1++)
 		;
+	/*iterate through array to get value without null*/
 	for (c2 = 0; src[c2]; c2++)
 	{
 		dest[c1] = src[c2];
