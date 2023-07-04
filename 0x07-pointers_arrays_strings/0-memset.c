@@ -5,7 +5,7 @@
  * @s: pointer to  the value
  * @b: value input
  * @n: number of byte
- * * Return: pointer to area s
+ * Return: pointer to area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
