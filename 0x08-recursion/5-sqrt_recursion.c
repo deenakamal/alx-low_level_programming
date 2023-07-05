@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 int _sqr(int n2, int value)
 {
 	if (value * value < n2)
-		return (_sqr(n, value + 1));
+		return (_sqr(n2, value + 1));
 	else if (value * value == n2)
 		return (value);
 	else
