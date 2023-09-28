@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * is_prime_number - get primew
- * @n: number
+ * @n: number input
  * Return:1 if the number is prime number
  */
 int is_prime_number(int n)
