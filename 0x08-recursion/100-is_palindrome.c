@@ -38,7 +38,7 @@ int findStringLen(char *str)
  */
 int checkerPalindrome(char *str, int strLen, int loop_i)
 {
-	if ((*str + loop_i) != *(str + strLen - 1))
+	if (*(str + loop_i) != *(str + strLen - 1))
 		return (0);
 	if (loop_i >= strLen)
 		return (1);
