@@ -2,7 +2,7 @@
 /**
  * _strlen_recursion - get the length of input string
  *
- * @s: input character
+ * @s: input character s
  *
  * Return: length
  */

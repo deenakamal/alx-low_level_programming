@@ -2,7 +2,7 @@
 int _sqr(int n2, int value);
 /**
  * _sqrt_recursion - return square
- * @n: input number
+ * @n: input number n
  * Return: if n  not naturak square return -1
  */
 int _sqrt_recursion(int n)

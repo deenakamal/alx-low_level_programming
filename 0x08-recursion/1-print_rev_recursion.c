@@ -2,7 +2,7 @@
 /**
  * _print_rev_recursion - print string in reverse
  *
- * @s: input character
+ * @s: input character s
  */
 void _print_rev_recursion(char *s)
 {

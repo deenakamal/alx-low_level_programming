@@ -2,7 +2,7 @@
 /**
  * _puts_recursion - function return string then new line
  *
- * @s: input character
+ * @s: input character s
  */
 void _puts_recursion(char *s)
 {

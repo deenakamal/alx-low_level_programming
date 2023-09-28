@@ -2,7 +2,7 @@
 /**
  * factorial - get facrotial of given number
  *
- * @n: input number
+ * @n: input number n
  *
  * Return: if n < 0 return -1
  */
