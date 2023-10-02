@@ -9,15 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int result;
+	int result, f_num, s_num;
 
 	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int f_num, s_num;
 
 	f_num = atoi(argv[1]);
 	s_num = atoi(argv[2]);
