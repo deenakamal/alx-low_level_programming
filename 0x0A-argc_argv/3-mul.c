@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	f_num = atoi(argv[1]);
 	s_num = atoi(argv[2]);
-	result = f_num * s_num2;
+	result = f_num * s_num;
 
 	printf("%d\n", result);
 	return (0);
