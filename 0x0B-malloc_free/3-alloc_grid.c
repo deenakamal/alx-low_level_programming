@@ -5,13 +5,13 @@
  * alloc_grid - returns a pointer to a 2 dimensional array of integers
  * @width: width of array
  * @height: height of array
- * Return: on filaiur null
+ * Return:  null
  */
 int **alloc_grid(int width, int height)
 {
 	/* creat double pointer one for row and one for colum */
 
-	int *p, i, j;
+	int **p, i, j;
 
 	p = malloc(sizeof(*p) * height);
 
