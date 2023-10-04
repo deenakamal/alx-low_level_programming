@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		S2 = "";
+		s2 = "";
 	/* find the length of string */
 	int length1 = 0;
 	int length2 = 0;
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	while (s1[length1] != '\0')
 	{
 		newResult[length1] = s1[length1];
-		length++;
+		length1++;
 	}
 	while (s2[length2] != '\0')
 	{
