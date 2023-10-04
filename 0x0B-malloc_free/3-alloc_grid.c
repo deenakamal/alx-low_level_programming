@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers
  * @width: width of array
@@ -10,9 +11,7 @@ int **alloc_grid(int width, int height)
 {
 	/* creat double pointer one for row and one for colum */
 
-	int *p;
-	int i;
-	int j;
+	int *p, i, j;
 
 	p = malloc(sizeof(*p) * height);
 
