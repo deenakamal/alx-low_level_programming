@@ -29,6 +29,8 @@ char *str_concat(char *s1, char *s2)
 	if (newResult == NULL)
 		return (NULL);
 
+	length1 = length2 = 0;
+
 	while (s1[length1] != '\0')
 	{
 		newResult[length1] = s1[length1];
