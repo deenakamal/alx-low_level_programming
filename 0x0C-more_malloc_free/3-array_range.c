@@ -15,7 +15,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	arr_size = mix - min + 1;
+	arr_size = max - min + 1;
 	p_to_array = malloc(sizeof(int) * arr_size);
 
 	if (p_to_array == NULL)
