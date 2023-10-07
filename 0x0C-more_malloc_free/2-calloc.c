@@ -10,13 +10,14 @@
  */
 char *_memset(char *s, int c, unsigned int n)
 {
-	char *_pointer = s;
+	unsigned int i;
 
-	while (n--)
+	while (i < n)
 	{
-		*s++ = c;
+		s[i] = c;
+		i++;
 	}
-	return (_pointer);
+	return (s);
 }
 /**
  * _calloc - allocat memory to array
