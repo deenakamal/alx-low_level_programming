@@ -12,18 +12,29 @@
 int main(int argc, char *argv[])
 {
 	int result = 0;
+	int i = 0;
 	char *p;
 
-	while (--argc)
-		for (p = argv[argc]; *p; p++)
+	if (argc == 1)
+	{
+		return (0);
+	}
+
+	while (i < argc)
+	{
+		i++;
+		for (p = argv[i]; *p; p++)
 		{
-			if (!isdigit(argv[argc]))
+			if (*p < '0' || *p > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			result += atoi(argv[argc]);
+
+			result += atoi(p);
 		}
+	
+	}
 	printf("%d\n", result);
 	return (0);
 }
