@@ -1,6 +1,24 @@
 #include "main.h"
 #include <string.h>
 /**
+ * _memset - set memory to zero
+ * @s: pointer to memory
+ * @c: the value you want to set
+ * @n: number of byte you want to set
+ *
+ * Return: pointer to alocated memory
+ */
+char *_memset(char *s, int c, unsigned int n)
+{
+	char *_pointer = s;
+
+	while (n--)
+	{
+		*s++ = c;
+	}
+	return (_pointer);
+}
+/**
  * _calloc - allocat memory to array
  * @nmemb: elements number
  * @size: size
@@ -24,7 +42,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (block == NULL)
 		return (NULL);
 	/* set memory to zero*/
-	memset(block, 0, calc_size);
+	_memset(block, 0, calc_size);
 
 	return (block);
 }
