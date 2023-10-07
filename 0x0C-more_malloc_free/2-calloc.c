@@ -36,7 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	/* clac_size used to calculate allocated memory */
 	calc_size = nmemb * size;
 
-	int *block = malloc(calc_size);
+	char *block = malloc(calc_size);
 
 	/*check if malloc fails */
 	if (block == NULL)
