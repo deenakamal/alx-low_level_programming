@@ -29,6 +29,7 @@ char *_memset(char *s, int c, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int calc_size;
+	char *block;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -36,7 +37,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	/* clac_size used to calculate allocated memory */
 	calc_size = nmemb * size;
 
-	char *block = malloc(calc_size);
+	block = malloc(calc_size);
 
 	/*check if malloc fails */
 	if (block == NULL)
