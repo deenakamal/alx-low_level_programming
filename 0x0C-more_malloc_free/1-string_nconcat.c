@@ -26,18 +26,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/* find the length of s1 */
 	while (s1[len_str1])
 	{
-		lenstr++;
+		len_str1++;
 	}
 	while (s2[len_str2])
 	{
-		lenstr++;
+		len_str2++;
 	}
 	/* if n is greater or equal the length s2 use the entire string s2 */
 
 	if (n >= len_str2)
 		n = len_str2;
 	/* then we have to allocate memory for new allocated memory */
-	new_c = mollac(sizeof(char) * (len_str1 + n + 1));
+	new_c = malloc(sizeof(char) * (len_str1 + n + 1));
 	/* check if memory allocated successfuly */
 	if (new_c == NULL)
 	{
