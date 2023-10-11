@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 	p = argv[2];
 
-	if (get_op_func(p) == NULL || p[1] != '\0')
+	if (!p || p[1] != '\0')
 		printf("Error\n"), exit(99);
 
 	/* if the user tries to divide (/ or %) by 0, print Error,*/
