@@ -6,7 +6,7 @@
  *
  * @s: The operator that selected
  *
- * Return: pointer to correct function based on 
+ * Return: pointer to correct function based on
  * the operator that given as a parameter
  */
 int (*get_op_func(char *s))(int, int)
