@@ -1,6 +1,24 @@
 #include <stdlib.h>
 #include <string.h>
 #include "dog.h"
+/**
+ * _strcpy - copy string
+ * @dest: string that be copied
+ * @src: string used to copy
+ * Return: point to dest that copied
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
+
+	return (dest);
+}
+
+
 
 /**
  * _strlen - find the length of string
@@ -49,8 +67,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	strcpy((*dog).name, name);
-	strcpy((*dog).owner, owner);
+	_strcpy((*dog).name, name);
+	_strcpy((*dog).owner, owner);
 	(*dog).age = age;
 	return (dog);
 }
