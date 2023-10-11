@@ -1,6 +1,23 @@
 #include "dog.h"
 #include <stdlib.h>
 #include<string.h>
+
+/**
+ * _strlen - return the length of string
+ * @str: string input
+ *
+ * Return: return the length of string
+ */
+int _strlen(char *str)
+{
+        int i;
+
+        for (i = 0; str[i] != '\0'; i++)
+                ;
+
+        return (i);
+}
+
 /**
  * new_dog - creates s new dog from struct dog
  * @name: name of new dog
@@ -14,7 +31,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 
-	dog = malloc(sizeof(dog_t));
+	dog = (dog_t *) malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
 	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
@@ -25,7 +42,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog->owner = malloc(sizeof(char) * (len2 + 1));
 	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 
 	if (dog->owner == NULL)
@@ -39,20 +55,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	strcpy((*dog).owner, owner);
 	(*dog).age = age;
 	return (dog);
-}
-
-/**
- * _strlen - return the length of string
- * @str: string input
- *
- * Return: return the length of string
- */
-int _strlen(char *str)
-{
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-		;
-
-	return (i);
 }
