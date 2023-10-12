@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_strings - print string followed by new line
- * @separator - the string to be printed between the strings
+ * @separator: the string to be printed between the strings
  * @n: number of paramters
  * @...: paramters
  * Rerturn: void
