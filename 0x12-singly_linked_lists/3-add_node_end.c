@@ -5,9 +5,11 @@
  * @str: string input
  * Return: address to new element or null if it failed
  */
-list_t *add_node_end(list_t **head, const char *s)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n_h, *next_node;
+
+	next_node = *head;
 
 	n_h = malloc(sizeof(list_t));
 	if (!n_h)
@@ -27,6 +29,7 @@ list_t *add_node_end(list_t **head, const char *s)
 		return (n_h);
 	}
 	while (next_node->next)
-		next_node = next_node = n_h;
+		next_node = next_node->next;
+	next_node->next = n_h;
 	return (n_h);
 }
