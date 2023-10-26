@@ -13,11 +13,16 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int converted_number = 0;
 	int index;
 
+	if (b == NULL)
+		return (0);
+
 	for (index = 0; b[index] != '\0'; index++)
 	{
 		if (b[index] != '0' && b[index] != '1')
 			return (0);
-		converted_number = converted_number * 2 + (b[index] - '0');
+		converted_number = converted_number << 1;
+		if (b[index] == '1')
+			converted_number |= 1;
 	}
 	return (converted_number);
 }
