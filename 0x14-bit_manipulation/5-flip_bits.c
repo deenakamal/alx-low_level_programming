@@ -16,8 +16,10 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (xor_value)
 	{
-		xor_value &= (xor_value - 1);
-		num_of_bit++;
+		if (xor_value & 1ul)
+			num_of_bit++;
+
+		xor_value = xor_value >> 1;
 	}
 	return (num_of_bit);
 }
