@@ -10,9 +10,6 @@ void print_binary(unsigned long int n)
 	int index = 63;
 	int _count = 0;
 
-	if (n == 0)
-		return;
-
 	while (index >= 0)
 	{
 		_bit = n >> index;
